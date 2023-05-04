@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-hpof
+  namespace: msawood-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/msawood-tenant/my-app-quarkus/devfile-sample-code-with-quarkus-hpof@sha256:2922c655247010726b80261f203ea44d3bf811f144a62116e762e2e9ae9072df
+        name: my-java-quarkus
+        resources: {}
+status: {}
